@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>Carré</item>
+        <item>Recangle</item>
+        <item>Triangle</item>
+        <item>Trapèze</item>
+        <item>Losange</item>
+        <item>Parallélogramme</item>
+        <item>Disque</item>
+        <item>Ellipse</item>
+        <item>Sphère</item>
+        <item>Cône</item>
+    </string-array>
+
+</resources>
