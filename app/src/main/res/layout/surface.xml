@@ -3,6 +3,28 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:text="Calcul de Surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:enabled="false" />
+
+        <Button
+            android:text="Calcul de Volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:onClick="redirection_volume"/>
+    </LinearLayout>
+
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

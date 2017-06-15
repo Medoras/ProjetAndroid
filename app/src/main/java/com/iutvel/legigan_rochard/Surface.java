@@ -28,4 +28,8 @@ public class Surface extends AppCompatActivity {
 
         });
     }
+
+    public void redirection_volume(View view){
+        startActivity(new Intent(this, Volume.class));
+    }
 }
