@@ -8,7 +8,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:drawSelectorOnTop="true"
-        android:entries="@array/spinnerItems"
+        android:entries="@array/spinnerItemsSurface"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="#99ddca"
+        android:popupBackground="#99ddca"
         />
 
     <FrameLayout
