@@ -11,4 +11,8 @@ public class Surface extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.surface);
     }
+
+    public void redirection_volume(View view){
+        startActivity(new Intent(this, Volume.class));
+    }
 }

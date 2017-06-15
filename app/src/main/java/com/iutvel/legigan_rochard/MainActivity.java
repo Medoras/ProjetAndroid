@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void redirection_surface(View view){
         startActivity(new Intent(this, Surface.class));
     }
+
+    public void redirection_volume(View view){
+        startActivity(new Intent(this, Volume.class));
+    }
 }
