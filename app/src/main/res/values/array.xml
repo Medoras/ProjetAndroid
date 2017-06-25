@@ -2,7 +2,7 @@
 <resources>
     <string-array name="spinnerItemsSurface">
         <item>Carré</item>
-        <item>Recangle</item>
+        <item>Rectangle</item>
         <item>Triangle</item>
         <item>Trapèze</item>
         <item>Losange</item>

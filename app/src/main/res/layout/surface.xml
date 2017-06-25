@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -44,58 +45,103 @@
         android:textAlignment="center">
 
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/surfRectangleLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longueur"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/eTextLongueurRect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Largeur"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/eTextLargeurRect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/Rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Calculer" />
+
+            <TextView
+                android:id="@+id/textRectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surface calculée"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/Carre"
-            >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/editText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:id="@+id/editText"
-                    android:layout_weight="1" />
+                    android:inputType="number" />
 
                 <Button
-                    android:text="Button"
+                    android:id="@+id/butCarre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button3"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="Calculer" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="wrap_content"
-                app:srcCompat="@drawable/surface_carre"
                 android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:text="Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:id="@+id/button6"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                app:srcCompat="@drawable/surface_carre" />
 
             <TextView
+                android:id="@+id/textCarre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/textView"
                 android:gravity="center_vertical"
                 android:text="Surface calculée"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
         </LinearLayout>
